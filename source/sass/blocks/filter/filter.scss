@@ -1,0 +1,141 @@
+.filter {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.filter__wrapper {
+  padding: 0 17px 36px 23px;
+}
+
+.filter__price {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filter__heading {
+  padding: 0 0 20px 0;
+  font-weight: 600;
+}
+
+.filter__range {
+  padding: 0 0 30px 0;
+}
+
+.filter__wrapper-scale {
+  position: relative;
+  height: 2px;
+  background-color: $grey;
+}
+
+.filter__bar {
+  position: absolute;
+  height: 4px;
+  background-color: $lighter;
+}
+
+.filter__range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 2px solid $lighter;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--min {
+    top: -8px;
+  }
+
+  &--max {
+    top: -8px;
+    right: -3px;
+  }
+}
+
+.filter__wrapper-inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 35px 0 0 0;
+}
+
+.filter__input::-webkit-outer-spin-button,
+.filter__input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.filter__text {
+  padding: 0 0 0 34px;
+}
+
+.filter__fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.filter__list {
+  margin: 0;
+  padding: 0;
+}
+
+.filter__item {
+  list-style-type: none;
+  padding: 0 0 20px 0;
+}
+
+.filter__label {
+  position: relative;
+}
+
+.filter__input {
+  margin: 0;
+
+  &--price {
+    margin: 0;
+    border: 2px solid $lighter;
+    width: 118px;
+    height: 40px;
+    text-align: center;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  &:focus-within + .filter__mark {
+    outline: 2px solid #000000;
+  }
+
+  &:hover + .filter__mark {
+    outline: 1px solid #bababa;
+  }
+
+  &:disabled + .filter__mark {
+    opacity: 0.3;
+  }
+}
+
+.filter__mark {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  content: "";
+  border: 2px solid $grey;
+  border-radius: 50%;
+  left: 0;
+  top: -3px;
+}
+
+.filter__input[type="radio"]:checked + .filter__mark::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: $primary;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

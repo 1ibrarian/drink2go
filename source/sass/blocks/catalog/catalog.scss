@@ -1,0 +1,29 @@
+.catalog {
+  background-color: #f8f8f8;
+}
+
+.catalog__wrapper {
+  margin: 0 auto;
+  width: 320px;
+  padding: 50px 0 56px;
+}
+
+.catalog__title {
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 16px;
+  font-size: 12px;
+  color: $primary;
+  font-weight: 700;
+  padding: 0 0 4px;
+  text-align: center;
+}
+
+.catalog__subtitle {
+  margin: 0;
+  line-height: 36px;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 0 20px 0;
+  text-align: center;
+}
